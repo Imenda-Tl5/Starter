@@ -30,17 +30,7 @@ height: 6px ;
 width: 50px;
 display: inline-block;
 }
-nav{
 
-    padding: 50px;
-    padding-top: 10px;
-
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 li,a{
     list-style: none;
     text-decoration: none;
@@ -202,5 +192,72 @@ transition: .5s;
 footer .footer-bottom  .col-1 button:hover{
     background-color: white;
     color: black;
+    transition: .5s;
+}
+
+
+
+/* nav   */
+@media (max-width:770px) {
+    nav{
+        justify-content: space-around;
+        align-items: center
+        
+    }
+    .nav-links{
+        position: absolute;
+        top: 130px;
+        display: flex;
+        flex-direction: column;
+         align-items: flex-start; 
+        gap: 20px;
+        background-color:white;
+       height: 30vh;
+       width:100vw;
+       padding: 30px;
+       padding-top:30px ;
+       padding-bottom: 30px;
+    }
+    .nav-links li{
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+}
+nav{
+    padding: 50px;
+    padding-top: 10px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-bottom:2px solid greenyellow ;
+    z-index: 1000;
+    
+}
+.nav-btns{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 4px;
+    gap: 12px;
+    align-items: center;
+}
+.nav-btns svg{
+    display: flex;
+    align-items: center  ;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    fill: #0b1436;
+}
+.nav-btns svg:hover{
+    fill: white;
     transition: .5s;
 }
