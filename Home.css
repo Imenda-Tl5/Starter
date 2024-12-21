@@ -257,10 +257,22 @@ background-size: contain;
             width: 80%;
             font-size: 2em;
         }
-    }
+        @media (max-width:530px) {
+            .hero .left{
+                transform: scale(.9);
+            }
+        }
+
+    }@media (max-width:460px) {
+            .hero .left h1{
+            font-size:29px ;
+            }
+            .hero .left h3{
+          font-size: 17px;      
+        }}
     .hero .left h3{
-        font-size: 30px;
         width: 50%;
+        font-size: 25px;
     }
     .hero .left button{
         background-color: #17224d;
@@ -619,7 +631,6 @@ cursor: pointer;
     .bottom-container{
         display: grid;
    grid-template-columns: 1fr;
-   place-items: left;
-   padding-left: 90px;
+   padding-left: 200px;
     }
 }
